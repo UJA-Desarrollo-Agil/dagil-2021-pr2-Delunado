@@ -1,0 +1,13 @@
+{
+    "name": "Practica_1_-_Comprando_el_Pan",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
