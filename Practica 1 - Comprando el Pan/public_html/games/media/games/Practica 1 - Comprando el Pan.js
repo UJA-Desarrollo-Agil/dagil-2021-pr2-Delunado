@@ -28,6 +28,8 @@ undum.game.slideUpSpeed = 500
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
+
+    //ZONA LINEAL INICIO
     start: new undum.SimpleSituation(
             "<h1>Los rayos del Sol te acarician suavamente a través de la ventana...</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
@@ -40,17 +42,17 @@ undum.game.situations = {
             "<h1>Titulo habitacion</h1>\
         <p>HABITACION\</p>\
         \
-        <p class='transient'>Puedes coger la <a href='camisetaRoja'>camiseta roja</a> o la <a href='camisetaAzul'>camiseta azul</a>. Elige bien. RELLENAR</p>"
+        <p class='transient'>Puedes coger la <a href='camisetaroja'>camiseta roja</a> o la <a href='camisetaazul'>camiseta azul</a>. Elige bien. RELLENAR</p>"
             ),
 
-    camisetaRoja: new undum.SimpleSituation(
+    camisetaroja: new undum.SimpleSituation(
             "<h1>Titulo Camiseta Roja</h1>\
         <p>CAMISETA ROJA\</p>\
         \
         <p class='transient'>Ahora puedes <a href='salon'>ir al salón</a> RELLENAR</p>"
             ),
 
-    camisetaAzul: new undum.SimpleSituation(
+    camisetaazul: new undum.SimpleSituation(
             "<h1>Titulo Camiseta Azul</h1>\
         <p>CAMISETA AZUL\</p>\
         \
@@ -68,7 +70,195 @@ undum.game.situations = {
             "<h1>Titulo Indeciso1</h1>\
         <p>Indeciso 1\</p>\
         \
-        <p class='transient'>Ahora puedes <a href='salon'>ir al salón</a> RELLENAR</p>"
+        <p class='transient'>Ahora puedes <a href='calle'>ir al salón</a> RELLENAR</p>"
+            ),
+
+    indeciso2: new undum.SimpleSituation(
+            "<h1>Titulo Indeciso2</h1>\
+        <p>Indeciso 2\</p>\
+        \
+        <p class='transient'>Ahora puedes <a href='calle'>ir al salón</a> RELLENAR</p>"
+            ),
+
+    calle: new undum.SimpleSituation(
+            "<h1>Titulo Calle</h1>\
+        <p>Calle\</p>\
+        \
+        <p class='transient'>Puedes hacer <a href='derecha'>derecha</a> o <a href='izquierda'> izquierda</a>. Elige bien. RELLENAR</p>"
+            ),
+
+    izquierda: new undum.SimpleSituation(
+            "<h1>Titulo Izq</h1>\
+        <p>Izquierda\</p>\
+        \
+        <p class='transient'>Ahora puedes <a href='calle'>ir a tienda</a>. También puedes ir a <a href='muro'>muro</a>  RELLENAR</p>"
+            ),
+
+    muro: new undum.SimpleSituation(
+            "<h1>Titulo Muro</h1>\
+        <p>Muro\</p>\
+        \
+        <p class='transient'>Ahora puedes volver a <a href='izq'>izq</a> Tambien elegir espera. RELLENAR</p>"
+            ),
+
+    derecha: new undum.SimpleSituation(
+            "<h1>Titulo Der</h1>\
+        <p>Derecha\</p>\
+        \
+        <p class='transient'>Ahora puedes <a href='tienda'>ir a tienda</a> RELLENAR</p>"
+            ),
+
+    tienda: new undum.SimpleSituation(
+            "<h1>Titulo Tienda</h1>\
+        <p>Tienda\</p>\
+        \
+        <p class='transient'>Puedes hacer <a href='panchapata'>pan chapata</a> o <a href='panbaguette'> baguette</a>. Elige bien. RELLENAR</p>"
+            ),
+
+    panchapata: new undum.SimpleSituation(
+            "<h1>Titulo Chapata</h1>\
+        <p>Chapata\</p>\
+        \
+        <p class='transient'>Ahora puedes <a href='vueltaacasa'>volver a casa</a> RELLENAR</p>"
+            ),
+
+    panbaguette: new undum.SimpleSituation(
+            "<h1>Titulo Baguette</h1>\
+        <p>Baguette\</p>\
+        \
+        <p class='transient'>Ahora puedes <a href='vueltaacasa'>volver a casa</a> RELLENAR</p>"
+            ),
+
+    vueltaacasa: new undum.SimpleSituation(
+            "<h1>Titulo Vuelta A Casa</h1>\
+        <p>Vuelta A Casa\</p>\
+        \
+        <p class='transient'>Puedes hacer <a href='investigar'>investigar</a> o <a href='iradormir'>dormir</a>. Elige bien. RELLENAR</p>"
+            ),
+
+    iradormir: new undum.SimpleSituation(
+            "<h1>Titulo Ir A Dormir</h1>\
+        <p>Ir A Dormir\</p>\
+        \
+        <p class='transient'>Fin del juego pero puedes volver <a href='vueltaacasa'>vuelta</a>. RELLENAR</p>"
+            ),
+
+    investigar: new undum.SimpleSituation(
+            "<h1>Titulo Investigar</h1>\
+        <p>Aqui empieza lo tocho 1\</p>\
+        \
+        <p class='transient'>Pues investigas y vas a zona <a href='zonaportales'>portales</a>. RELLENAR</p>"
+            ),
+
+    zonaportales: new undum.SimpleSituation(
+            "<h1>Titulo Zona Portales</h1>\
+        <p>Aqui empieza lo tocho 2\</p>\
+        \
+        <p class='transient'>Puedes hacer <a href='portal1'>portal1</a> o <a href='portal2'>portal2</a> o <a href='portal3'>portal3</a>. Haz los 3. Tambien puedes ir a <a href='final'>portal2</a> RELLENAR</p>"
+
+
+            ),
+
+    //ZONA PORTAL 1
+    portal1: new undum.SimpleSituation(
+            "<h1>Titulo Portal1</h1>\
+        <p>Portal1\</p>\
+        \
+        <p class='transient'>Descripcion y avance a prueba <a href='portal1prueba'>prueba</a>. RELLENAR</p>"
+            ),
+
+    portal1prueba: new undum.SimpleSituation(
+            "<h1>Titulo Portal1Prueba</h1>\
+        <p>Portal1Prueba\</p>\
+        \
+        <p class='transient'>Prueba con muchas palabras y <a href='portal1final'>final</a>. RELLENAR</p>"
+            ),
+
+    portal1final: new undum.SimpleSituation(
+            "<h1>Titulo Portal1Final</h1>\
+        <p>Portal1Final\</p>\
+        \
+        <p class='transient'>Has conseguido llave1 volver <a href='zonaportales'>bifurcacion</a>. RELLENAR</p>"
+            ),
+
+    //ZONA PORTAL 2
+    portal2: new undum.SimpleSituation(
+            "<h1>Titulo Portal2</h1>\
+        <p>Portal2\</p>\
+        \
+        <p class='transient'>Descripcion y avance a prueba <a href='portal2prueba'>prueba</a>. RELLENAR</p>"
+            ),
+
+    portal2prueba: new undum.SimpleSituation(
+            "<h1>Titulo Portal2Prueba</h1>\
+        <p>Portal2Prueba\</p>\
+        \
+        <p class='transient'>Prueba con dados? Atributo partidas de piedra papel y tijeras ganadas y <a href='portal2final'>final</a>. RELLENAR</p>"
+            ),
+
+    portal2final: new undum.SimpleSituation(
+            "<h1>Titulo Portal1Fina2</h1>\
+        <p>Portal1Fina2\</p>\
+        \
+        <p class='transient'>Has conseguido llave2 volver <a href='zonaportales'>bifurcacion</a>. RELLENAR</p>"
+            ),
+
+    //ZONA PORTAL 3
+    portal3: new undum.SimpleSituation(
+            "<h1>Titulo Portal3</h1>\
+        <p>Portal3\</p>\
+        \
+        <p class='transient'>Descripcion y avance a prueba <a href='portal3prueba'>prueba</a>. RELLENAR</p>"
+            ),
+
+    portal3prueba: new undum.SimpleSituation(
+            "<h1>Titulo Portal3Prueba</h1>\
+        <p>Portal3Prueba\</p>\
+        \
+        <p class='transient'>Prueba de viajes en el tiempo y <a href='portal3final'>final</a>. RELLENAR</p>"
+            ),
+
+    portal3final: new undum.SimpleSituation(
+            "<h1>Titulo Portal1Fina3</h1>\
+        <p>Portal1Fina3\</p>\
+        \
+        <p class='transient'>Has conseguido llave3 volver <a href='zonaportales'>bifurcacion</a>. RELLENAR</p>"
+            ),
+
+    tiempopasado: new undum.SimpleSituation(
+            "<h1>Titulo Portal3Prueba</h1>\
+        <p>Portal3Prueba\</p>\
+        \
+        <p class='transient'>Prueba de viajes en el tiempo y <a href='portal3final'>final</a>. RELLENAR</p>"
+            ),
+
+    tiempofuturo: new undum.SimpleSituation(
+            "<h1>Titulo Portal3Prueba</h1>\
+        <p>Portal3Prueba\</p>\
+        \
+        <p class='transient'>Prueba de viajes en el tiempo y <a href='portal3final'>final</a>. RELLENAR</p>"
+            ),
+
+    tiempopocosminutos: new undum.SimpleSituation(
+            "<h1>Titulo Portal3Prueba</h1>\
+        <p>Portal3Prueba\</p>\
+        \
+        <p class='transient'>Prueba de viajes en el tiempo y <a href='portal3final'>final</a>. RELLENAR</p>"
+            ),
+
+    //FINAL
+    final: new undum.SimpleSituation(
+            "<h1>Titulo Final</h1>\
+        <p>Final\</p>\
+        \
+        <p class='transient'><a href='final2'>final</a>. RELLENAR</p>"
+            ),
+
+    final2: new undum.SimpleSituation(
+            "<h1>Titulo Final2</h1>\
+        <p>Final2\</p>\
+        \
+        <p class='transient'>Prueba de viajes en el tiempo y <a href='portal3final'>final</a>. RELLENAR</p>"
             ),
 
     // NB: The 'hub' situation which is the main list of topics, is
