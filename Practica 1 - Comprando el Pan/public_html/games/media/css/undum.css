@@ -92,6 +92,10 @@ body {
     color: #943;
 }
 
+/* Style the element with the id "myHeader" */
+#muroid {
+}
+
 /* Main content */
 #content_wrapper {
     max-width: 28em;

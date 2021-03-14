@@ -403,6 +403,14 @@
     IntegerQuality.prototype.format = function(character, value) {
         return Math.floor(value).toString();
     };
+    
+    var IntegerNoShow = function(title, opts) {
+        QualityDefinition.call(this, title, opts);
+    };
+    IntegerNoShow.inherits(QualityDefinition);
+    IntegerNoShow.prototype.format = function(character, value) {
+        return null; //Math.floor(value).toString();
+    };
 
     /* A quality that displays as an IntegerQuality, unless it is
      * zero, when it is omitted. Options (in the opts * parameter) are
@@ -1827,6 +1835,7 @@
 
         QualityDefinition: QualityDefinition,
         IntegerQuality: IntegerQuality,
+        IntegerNoShow: IntegerNoShow,
         NonZeroIntegerQuality: NonZeroIntegerQuality,
         NumericQuality: NumericQuality,
         WordScaleQuality: WordScaleQuality,
