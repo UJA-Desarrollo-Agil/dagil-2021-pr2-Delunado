@@ -92,10 +92,6 @@ body {
     color: #943;
 }
 
-/* Style the element with the id "myHeader" */
-#muroid {
-}
-
 /* Main content */
 #content_wrapper {
     max-width: 28em;
@@ -175,11 +171,24 @@ h1 {
 h1:first-child {
     margin-top: 0;
 }
+
+a.newsituation{
+    color: darkcyan;
+    border: 1px darkcyan;
+    padding: 1px;
+    border-style: dashed;
+}
+
+a.newsituation:hover {
+    border: 2px dotted cadetblue;
+}
+
 a {
     color: #900;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
+
 a.raw {
     padding-right: 14px;
     background: transparent url("../img/external_link.png") no-repeat right 4px;
