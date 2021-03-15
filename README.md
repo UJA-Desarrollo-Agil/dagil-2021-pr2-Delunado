@@ -6,6 +6,7 @@
 
 Pantasía es una historia interactiva lineal normal y corriente. Javier Camacho debe ir a comprar el pan. Nada más. Parece fácil, ¿no?
 
+El juego puede ser jugado en el navegador desde aquí: https://delunado.itch.io/pantasia. (Recomendado PC en vez de móvil).
 
 
 ### URL de Trello
